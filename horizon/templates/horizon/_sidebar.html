@@ -54,7 +54,26 @@
       {% endif %}
       {% endfor %}
 </ul>
-<li>
+<li class="panel openstack-dashboard">
   <a href="https://www.bhojr.com/prod/ai-inference-stresser.html">BV AIS</a>
 </li>
-    
+  
+<script type="text/javascript">
+  function loadBvaisContent() {
+    // Get the content body div
+    const contentBody = document.getElementById("content_body");
+
+    // Clear any existing content
+    contentBody.innerHTML = "";
+
+    // Create an iframe element
+    const iframe = document.createElement("iframe");
+    iframe.src = "/static/dashboard/html/bvais.html";  // Replace with the path to your HTML page
+    iframe.style.width = "100%";
+    iframe.style.height = "100%";
+    iframe.style.border = "none";
+
+    // Append the iframe to the content body
+    contentBody.appendChild(iframe);
+  }
+</script>
