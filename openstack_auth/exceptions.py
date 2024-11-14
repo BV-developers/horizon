@@ -37,7 +37,7 @@ class KeystoneRetrieveDomainsException(KeystoneAuthException):
 
 
 class KeystoneConnectionException(KeystoneAuthException):
-    """Unable to establish connection to keystone endpoint."""
+    """!!!Unable to establish connection to keystone endpoint."""
 
 
 class KeystoneCredentialsException(KeystoneAuthException):
